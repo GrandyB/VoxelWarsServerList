@@ -5,9 +5,32 @@ export default async function Home() {
 
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-6 py-12">
-      <h1 className="text-3xl font-semibold tracking-tight">
-        Voxel Wars Servers
-      </h1>
+      <header className="flex flex-col gap-2">
+        <h1 className="text-3xl font-semibold tracking-tight">
+          Voxel Wars Servers
+        </h1>
+        <p className="max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
+          New to Voxel Wars?{" "}
+          <a
+            href="https://voxel-wars.com/index.html"
+            className="font-medium text-foreground underline decoration-zinc-300 underline-offset-2 hover:decoration-foreground dark:decoration-zinc-600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Check out the game
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://discord.gg/vAzTDdvdvg"
+            className="font-medium text-foreground underline decoration-zinc-300 underline-offset-2 hover:decoration-foreground dark:decoration-zinc-600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            join the Discord
+          </a>
+          .
+        </p>
+      </header>
 
       <div className="overflow-x-auto rounded-lg border border-zinc-200 dark:border-zinc-800">
         <table className="w-full min-w-[32rem] border-collapse text-left text-sm">
